@@ -22,6 +22,14 @@ test.describe('Testes App Sauce', () => {
     BASE_URL = TheConfig.fromFile(CONFIG)
       .andPath('application.sauce_demo')
       .retrieveData();
+  } else if (process.env.HML) {
+    BASE_URL = TheConfig.fromFile(CONFIG)
+      .andPath('application.sauce_demo_HML')
+      .retrieveData();
+  } else if (process.env.PRD) {
+    BASE_URL = TheConfig.fromFile(CONFIG)
+      .andPath('application.sauce_demo_PRD')
+      .retrieveData();
   }
 
   test.beforeEach(async ({ page }) => {

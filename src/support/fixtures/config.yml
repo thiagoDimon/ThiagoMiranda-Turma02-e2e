@@ -1,2 +1,4 @@
 application:
   sauce_demo: 'https://www.saucedemo.com/'
+  sauce_demo_HML: 'https://www.saucedemo.com/'
+  sauce_demo_PRD: 'https://www.saucedemo.com/'
